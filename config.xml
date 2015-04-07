@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <widget xmlns = "http://www.w3.org/ns/widgets" 
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+		id = "com.ericdecoff.tmc"
+		version = "3.7.0"
+		versionCode = "370">
+
+    <name>Temple Medical</name>
+
+    <description>
+ 	   Temple Medical Clinic	
+    </description>
+
+    <author href="http://ericdecoff.com" email="ericdecoff@gmail.com">Eric DeCoff</author>
+
+	<!-- Plugins -->
+
+	<gap:plugin name="org.apache.cordova.device" />
+	<gap:plugin name="org.apache.cordova.media" />
+	<gap:plugin name="org.apache.cordova.inappbrowser" />        
+    <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="org.apache.cordova.vibration" />
+    <gap:plugin name="de.appplant.cordova.plugin.email-composer" /> <!-- email-composer plugin -->       
+    <gap:plugin name="com.pushwoosh.plugins.pushwoosh" />
+        
+    <!-- ICONS -->
+        
+    <icon src="icon.png" /> <!-- default 512 pixels -->
+    
+    <!-- iOS6 -->
+    <icon src="Resources/iphone/appicon.png" gap:platform="ios" width="57" height="57" />
+    <icon src="Resources/iphone/appicon-72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="Resources/iphone/appicon@2x.png" gap:platform="ios" width="114" height="114" />
+    <icon src="Resources/iphone/appicon-72@2x.png" gap:platform="ios" width="144" height="144" />    
+    <!-- iOS7 -->
+    <icon src="Resources/iphone/appicon-76.png" gap:platform="ios" width="76" height="76" />
+    <icon src="Resources/iphone/appicon-60@2x.png" gap:platform="ios" width="120" height="120" />
+    <icon src="Resources/iphone/appicon-76@2x.png" gap:platform="ios" width="152" height="152" />
+        
+
+
+
+
+
+
+        
+
+
+        
+    <!-- SPLASH SCREENS -->
+        
+    <gap:splash src="splash.png" />
+    
+    <!-- non retina -->
+    <gap:splash src="Resources/iphone/Default.png" gap:platform="ios" width="320" height="480" />
+    <!-- retina 4 -->
+    <gap:splash src="Resources/iphone/Default@2x.png" gap:platform="ios" width="640" height="960" />
+    <!-- retina 5+ -->
+    <gap:splash src="Resources/iphone/Default-568h@2x.png" gap:platform="ios" width="640" height="1136" />
+        
+    <!-- iPad non retina -->    
+    <gap:splash src="Resources/iphone/Default-Landscape.png" gap:platform="ios" width="1024" height="768" />
+    <gap:splash src="Resources/iphone/Default-Portrait.png" gap:platform="ios" width="768" height="1024" />
+    <!-- iPad Retina -->
+    <gap:splash src="Resources/iphone/Default-Landscape@2x.png" gap:platform="ios" width="2048" height="1496" />
+    <gap:splash src="Resources/iphone/Default-Portrait@2x.png" gap:platform="ios" width="1536" height="2008" />
+        
+    <!-- android splash -->    
+    <!-- 200x320 -->        
+
+    <!-- 320x480 -->    
+
+    <!-- 480x800 -->        
+
+    <!-- 720x1280 -->        
+
+        
+    <!-- Windows Phone 7 480x800 -->
+
+
+    <!-- PLATFORM SELECTION -->
+
+    <gap:platform name="ios" />
+
+
+        
+    <!-- GENERAL PREFERENCES -->
+        
+    <preference name="phonegap-version" value="3.7.0" />
+    <preference name="orientation" value="default" />
+    <preference name="fullscreen" value="true" /> <!-- remove the upper bar on iOS and Android -->
+        
+    <!-- iOS PREFERENCES -->
+    
+    <preference name="target-device" value="universal" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="false" />
+    <preference name="exit-on-suspend" value="false" />
+
+    <preference name="webviewbounce" value="false" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="show-splash-screen-spinner" value="false" />
+    <preference name="auto-hide-splash-screen" value="true" /> <!-- if set to false, the splash screen must be hidden using a JavaScript API -->
+        
+    <!-- ANDROID PREFERENCES -->
+        
+    <preference name="android-minSdkVersion" value="7" /> <!-- minimum Android 2.1 -->
+    <!-- <preference name="android-maxSdkVersion" value="19" /> maximum Android 4.4 -->
+    <preference name="android-targetSdkVersion" value="19" /> <!-- targeting Android 4.4 -->
+    <preference name="android-installLocation" value="auto" />
+    <preference name="android-windowSoftInputMode" value="stateHidden|adjustResize" />
+    <preference name="SplashScreenDelay" value="5000" />
+
+    <preference name="load-url-timeout" value="20000" />
+        
+    <!-- PHONEGAP API FEATURES PREFERENCES -->
+        
+    <preference name="permissions" value="none"/>
+    <!--
+    <feature name="http://api.phonegap.com/1.0/battery"/>
+    <feature name="http://api.phonegap.com/1.0/camera"/>
+    <feature name="http://api.phonegap.com/1.0/contacts"/>
+    <feature name="http://api.phonegap.com/1.0/file"/>
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/media"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>
+    -->
+
+    <access origin="*" />
+
+</widget>
