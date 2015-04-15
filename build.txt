@@ -63,9 +63,9 @@ js/utils/navbar-top.js
 js/utils/container.js
 js/utils/mobile.js
 js/utils/callable.js
-js/utils/phone.js
 js/utils/cssLoader.js
 js/utils/windows.js
+js/utils/phone.js
 js/pages/home/home.js
 js/utils/error-404.js
 js/utils/no-internet.js
