@@ -1,0 +1,38 @@
+<label class="item item-input item-floating-label"
+    ng-class="{ 'has-error' : userForm.fname.$invalid && !userForm.fname.$pristine }">
+    <span class="input-label">First Name</span>
+    <input name="fname" 
+        type="text" 
+        placeholder="First Name"
+        ng-model="register.nameFirst"
+        ng-minlength="3"
+        required>
+</label>
+    <p ng-show="userForm.fname.$invalid && !userForm.fname.$pristine" 
+        class="assertive" style="">
+        First Name is required ( min length 3 ).
+    </p>        
+    <p ng-show="userForm.fname.$valid || userForm.fname.$pristine" >
+        &nbsp;
+    </p>        
+<label class="item item-input item-floating-label">
+    <span class="input-label">Last Name</span>
+    <input name="lname" 
+        type="text" 
+        placeholder="Last Name"
+        ng-model="register.nameLast"
+        ng-minlength="3"
+        required>
+</label>
+    <p ng-show="userForm.lname.$invalid && !userForm.lname.$pristine" 
+        class="assertive" style="">
+        Last Name is required ( min length 3 ).
+    </p>        
+    <p ng-show="userForm.lname.$valid || userForm.lname.$pristine" >&nbsp;
+    </p>
+<button class="button button-stable"
+    ng-click="setUrl(1)">Back</button>
+<button class="button button-positive" 
+    style="float:right"
+    ng-disabled="userForm.$invalid"
+    ng-click="setUrl(2)">Next</button>

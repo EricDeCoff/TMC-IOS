@@ -1,0 +1,32 @@
+<!--
+<ion-view hide-nav-bar="true">
+    <ux-header></ux-header>
+-->
+<ion-view class="contact-view">    
+    <ion-content class="has-header padding contact-bgImage">
+        <div class="full-image text-center contact-PhoneMapDiv">
+    <div class="row row-center">
+        <a class="col col-20 col-center button button-light ion-2x ion-ios-telephone button-balanced"
+            href="#"
+            ng-click="contactCall('{{ companyNumber }}')"></a>
+        <div class="col col-70"><h4>{{ companyNumber | filterPhone }}</h4></div>
+        <a class="col col-20 col-center button button-light button-balanced ion-2x ion-ios-navigate"
+            href="#"
+            ng-click="contactMap('{{ companyAddress }}')">
+        </a>
+    </div>
+        </div>
+    </ion-content>
+    <ion-footer-bar align-title="left" class="bar-assertive">
+        <div class="full-image text-center">
+            <h3 ng-bind-html="companyAddress | filterTrustedHTML"></h3>
+            <h3>
+                <span ng-bind-html="companyCity | filterTrustedHTML"></span>
+                <span>,&nbsp;</span>
+                <span ng-bind-html="companyState | filterTrustedHTML"></span>
+                <span>&nbsp;</span>
+                <span ng-bind-html="companyPostal | filterTrustedHTML"></span>
+            </h3>
+        </div>
+    </ion-footer-bar>
+</ion-view>

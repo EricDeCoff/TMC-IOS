@@ -1,0 +1,44 @@
+<label class="item item-input item-floating-label"
+    ng-class="{ 'has-error' : userForm.mobile.$invalid && !userForm.mobile.$pristine }">
+    <span class="input-label">Mobile</span>
+    <input id="mobile1" 
+        name="mobile1" 
+        type="text"
+        pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" 
+        placeholder="Mobile"
+        ng-model="register.mobile1"
+        ng-minlength="10"
+        required>
+</label>
+    <p ng-show="userForm.mobile1.$invalid && !userForm.mobile1.$pristine" 
+        class="assertive" style="">
+        Valid mobile number is required ( min length 10 ).
+    </p>        
+    <p ng-show="userForm.mobile1.$valid || userForm.mobile1.$pristine" >
+        &nbsp;
+    </p>        
+<label class="item item-input item-floating-label">
+    <span class="input-label">Confirm Mobile</span>
+    <input id="mobile2" 
+        name="mobile2" 
+        type="text" 
+        pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" 
+        placeholder="Confirm Mobile"
+        ng-model="register.mobile2"
+        ng-minlength="10"
+        phone-check="mobile1"
+        required>
+</label>
+    <p data-ng-show="userForm.mobile2.$error.numbersmatch && !userForm.mobile2.$pristine"
+        class="assertive">
+        Validate Numbers match!
+    </p>
+    <p>&nbsp;
+    </p>        
+            
+<button class="button button-stable"
+    ng-click="setUrl(2)">Back</button>
+<button class="button button-positive" 
+    style="float:right"
+    ng-disabled="userForm.$invalid"        
+    ng-click="setUrl('register.review.html')">Next</button>

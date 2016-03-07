@@ -1,0 +1,23 @@
+<div class="row row-center">
+    <div class="col col-20">Name</div>
+    <div class="col col-70">{{ register.nameFirst + ' ' + register.nameLast }}</div>
+</div>
+<div class="row row-center">
+    <div class="col col-20">Email</div>
+    <div class="col col-70">{{ register.email1 }}</div>
+</div>
+<div class="row row-center">
+    <div class="col col-20">Mobile</div>
+    <div class="col col-70">{{ register.mobile1 }}</div>
+</div>
+<div class="row">
+    <div class="col col-50">
+        <button class="button button-stable"
+            ng-click="setUrl(3)">Back</button>
+    </div>
+    <div class="col col-50">
+        <button class="button button-positive" 
+            style="float:right"
+            ng-click="saveInfo($scope)">Save</button>
+    </div>
+</div>

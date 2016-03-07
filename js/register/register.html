@@ -1,0 +1,16 @@
+<ion-view hide-nav-bar="true" hide-back-button="false">
+    <ion-header-bar class="bar-positive bar bar-header disable-user-behavior" align-title="center">
+        <button side="right" class="button button-energized" 
+            ng-click="myGoBack()">
+            Cancel
+        </button>
+        <h1 class="title">Register</h1>
+    </ion-header-bar>
+    <ion-content class="padding">
+        <form name="userForm" novalidate>
+            <div class="list">
+        		<div ng-include="registerUrl" />
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

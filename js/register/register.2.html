@@ -1,0 +1,42 @@
+<label class="item item-input item-floating-label"
+    ng-class="{ 'has-error' : userForm.email1.$invalid && !userForm.email1.$pristine }">
+    <span class="input-label">Email</span>
+    <input id="email1" 
+        name="email1" 
+        type="text"
+        pattern="^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$" 
+        placeholder="Email"
+        ng-model="register.email1"
+        ng-minlength="10"
+        required>
+</label>
+    <p ng-show="userForm.email1.$invalid && !userForm.email1.$pristine" 
+        class="assertive" style="">
+        Valid Email is required ( min length 10 ).
+    </p>        
+    <p ng-show="userForm.email1.$valid || userForm.email1.$pristine" >
+        &nbsp;
+    </p>        
+<label class="item item-input item-floating-label">
+    <span class="input-label">Confirm Email</span>
+    <input id="email2"
+        name="email2" 
+        type="text" 
+        placeholder="Confirm Email"
+        ng-model="register.email2"
+        ng-minlength="10"
+        email-check="email1"
+        required>
+</label>
+    <p data-ng-show="userForm.email2.$error.emailmatch && !userForm.email2.$pristine"
+        class="assertive">
+        Validate Emails match!
+    </p>
+    <p>&nbsp;
+    </p>        
+<button class="button button-stable"
+    ng-click="setUrl(1)">Back</button>
+<button class="button button-positive" 
+    style="float:right"
+    ng-disabled="userForm.$invalid"        
+    ng-click="setUrl(3)">Next</button>
