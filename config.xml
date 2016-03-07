@@ -93,6 +93,9 @@
     <!--
     <preference name="deploy-target" value="7.0" />
     -->
+    
+    <preference name="BackupWebStorage" value="none" />
+    
 
     
     <!-- GENERAL PREFERENCES -->

@@ -4,13 +4,44 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <!-- Enable all requests, inline styles, and eval() -->
+    
+<!--
+"content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'"
+    
     <meta http-equiv="Content-Security-Policy" content="default-src *; style-src &apos;self&apos; &apos;unsafe-inline&apos;; script-src &apos;self&apos; &apos;unsafe-inline&apos; &apos;unsafe-eval&apos;">
+-->    
+<meta http-equiv="Content-Security-Policy"
+          content="default-src *;
+               script-src 'self' 'unsafe-inline' 'unsafe-eval'
+                           127.0.0.1:*
+                           http://*.google.com
+                           http://*.gstatic.com
+                           http://*.googleapis.com
+                           http://*.firebaseio.com
+                           https://*.google.com
+                           https://*.gstatic.com
+                           https://*.googleapis.com
+                           https://*.firebaseio.com
+                           https://*.firebase.com
+                           ;
+               style-src  'self' 'unsafe-inline'
+                          127.0.0.1
+                           http://*.google.com
+                           http://*.gstatic.com
+                           http://*.googleapis.com
+                           http://*.firebaseio.com
+                           https://*.google.com
+                           https://*.gstatic.com
+                           https://*.googleapis.com
+                           https://*.firebaseio.com
+                           https://*.firebase.com
+">
       
-    <title></title>
+    <title>Temple Medical Clinic</title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
       
-    <link rel="stylesheet" href="./css/style.min-e0ebc5de68.css">
+    <link rel="stylesheet" href="./css/style.min-6eb0ae693e.css">
 
       
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
@@ -21,8 +52,10 @@
     <script src="lib/jquery/dist/jquery.js"></script>
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
-<script src="lib/ionic-platform-web-client/dist/ionic.io.bundle.min.js"></script>
-
+    <script src="lib/ionic-platform-web-client/dist/ionic.io.bundle.min.js"></script>
+<!--
+    <script src="lib/angular-local-storage/angular-local-storage.min.js"></script>
+-->
     <!-- cordova script (this will be a 404 during development) -->
     <script src="lib/ngCordova/dist/ng-cordova.js"></script>
     <!-- Cordova is bootstrapped by ionic-platform-web-client, uncomment this if you remove ionic-platform-web-client... -->
@@ -30,18 +63,81 @@
 
   </head>
   <body ng-app="app">
-    <ion-nav-bar class="bar-stable">
-      <ion-nav-back-button>
-      </ion-nav-back-button>
-    </ion-nav-bar>
-    <ion-nav-view></ion-nav-view>
+    <ion-side-menus class="hide">
+        
+        <ion-side-menu-content ng-controller="NavCtrl">
+          <ion-nav-bar class="bar-positive no-padding">
+            <ion-nav-back-button class="button-icon ion-arrow-left-c">
+            </ion-nav-back-button>
+            <ion-nav-buttons side="left">
+              <ux-boxdate></ux-boxdate>
+            </ion-nav-buttons>
+            <ion-nav-title>
+              <ui-two-line-title></ui-two-line-title>
+            </ion-nav-title>
+          
+            <ion-nav-buttons side="right">
+              <button class="button button-icon button-clear ion-navicon button-sidemenu" ng-click="showRightMenu()">
+              </button>
+            </ion-nav-buttons>
+          </ion-nav-bar>
+          <ion-nav-view animation="slide-left-right"></ion-nav-view>
+        </ion-side-menu-content> 
+<!--        
+        <ion-side-menu side="left">
+          <ion-header-bar class="bar bar-header bar-assertive">
+            <h1 class="title">Left Menu</h1>
+          </ion-header-bar>
+          <ion-content has-header="true">
+            <ul class="list">
+              <li>
+                <a class="item" menu-toggle nav-clear href="#/tab/home">Home</a>
+              </li>
+              <li>
+                <a class="item" menu-toggle href="#/tab/facts">Facts</a>
+              </li>
+              <li>
+                <a class="item" menu-toggle href="#/tab/facts2">More Facts</a>
+              </li>
+            </ul>
+          </ion-content>
+        </ion-side-menu>
+ -->     
+        <ion-side-menu side="right">
+          <ion-header-bar class="bar bar-header bar-dark">
+            <h1 class="title">Right Menu</h1>
+          </ion-header-bar>
+          <ion-content>
+            <ul class="list">
+              <li>
+                <a class="item" menu-toggle="right" nav-clear href="#/register">Register</a>
+              </li>
+              <li>
+                <a class="item" menu-toggle="right" nav-clear href="#/settings">Settings</a>
+              </li>
+              <li>
+                <a class="item" menu-toggle="right" nav-clear href="#/information">Information</a>
+              </li>
+            </ul>
+          </ion-content>
+        </ion-side-menu>
+        
+      </ion-side-menus>
+    
     <!--
     <script src="PushWooshNotification.js"></script>
     <script src="js/pushWooshHandler.js"></script>
     -->
+
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="lib/angularfire/angularfire.min.js"></script>
+    
     <!-- your app's js -->
     
-    <script src="./js/app.min-4c65ea49a8.js"></script>
+    <script src="./js/app.min-2316faac8b.js"></script>
 
     
   </body>
