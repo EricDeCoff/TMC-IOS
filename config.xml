@@ -123,6 +123,13 @@
     <access origin="geo:*" launch-external="yes" />
     
     <access origin="*.pushwoosh.com" />
+    <access origin="*.google.com"/>
+    <access origin="*.gstatic.com"/>
+    <access origin="*.googleapis.com"/>
+    <access origin="*.firebaseio.com"/>
+    <access origin="*.firebase.com"/>
+     
+    
     <access origin="*" />
     
 </widget>
