@@ -126,7 +126,7 @@ to{transform:scale(1);opacity:1}}
 #about-years{top:66px}
 #about-table{position:fixed;top:0;left:0}
 #about-info-col1 h1,#about-info-col2 h1{color:#06f}
-.about-bgImage{background-image:url(../img/lori_hudson_blank.png);background-position-x:60%;background-repeat:no-repeat;background-size:cover}
+.about-bgImage{background-repeat:no-repeat;background-image:url(../img/lori_hudson_blank-new.png);background-position:right bottom;background-size:contain}
 @media only screen and (min-width:320px){.tmc-about-info-col1,.tmc-about-info-col2{color:#06f;font-size:1.5em;line-height:1.17em}
 .tmcPhoneLong{font-size:1.17em}}
 @media only screen and (min-width:768px){.tmc-about-info-col1,.tmc-about-info-col2{font-size:3.75em}
@@ -178,6 +178,13 @@ to{transform:scale(1);opacity:1}}
 .yos-btn.teal:hover{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3),inset 0 2px 5px rgba(0,0,0,.3),0 0 28px 6px rgba(16,216,252,.8);-moz-box-shadow:inset 0 0 6px rgba(0,0,0,.3),inset 0 2px 5px rgba(0,0,0,.3),0 0 28px 6px rgba(16,216,252,.8);box-shadow:inset 0 0 6px rgba(0,0,0,.3),inset 0 2px 5px rgba(0,0,0,.3),0 0 28px 6px rgba(16,216,252,.8)}
 .yos-btn.blue:hover{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3),inset 0 2px 5px rgba(0,0,0,.3),0 0 28px 6px rgba(43,95,187,.8);-moz-box-shadow:inset 0 0 6px rgba(0,0,0,.3),inset 0 2px 5px rgba(0,0,0,.3),0 0 28px 6px rgba(43,95,187,.8);box-shadow:inset 0 0 6px rgba(0,0,0,.3),inset 0 2px 5px rgba(0,0,0,.3),0 0 28px 6px rgba(43,95,187,.8)}
 .yos-btn.green:hover{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3),inset 0 2px 5px rgba(0,0,0,.3),0 0 28px 6px rgba(47,217,29,.8);-moz-box-shadow:inset 0 0 6px rgba(0,0,0,.3),inset 0 2px 5px rgba(0,0,0,.3),0 0 28px 6px rgba(47,217,29,.8);box-shadow:inset 0 0 6px rgba(0,0,0,.3),inset 0 2px 5px rgba(0,0,0,.3),0 0 28px 6px rgba(47,217,29,.8)}
+.platform-ios7.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader)>*{margin-top:25px}
+.platform-ios7.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader){height:90px}
+.platform-ios7.platform-cordova:not(.fullscreen) .has-header{top:90px}
+.bar .title{height:64px!important}
+.offsetLine1{text-align:center;vertical-align:middle1;z-index:0!important}
+.offsetLine2{top:20px!important;z-index:0!important}
+.title-single{text-align:center;vertical-align:middle1;height:64px;z-index:0!important}
 .box-date{float:right;margin-left:10px;padding:45px 5px 0;position:relative}
 .box-date .day{font-size:40px;left:15px;line-height:40px;position:absolute;top:5px}
 .box-date .year{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);display:block;position:absolute;line-height:13px;left:75px;right:15px;top:5px}
@@ -185,10 +192,6 @@ to{transform:scale(1);opacity:1}}
 .platform-android.platform-cordova:not(.fullscreen) .box-date{top:-5px}
 .platform-android.platform-cordova:not(.fullscreen) .box-date .day{top:10px}
 .platform-ios.platform-cordova:not(.fullscreen) .box-date{top:-30px}
-.bar .title{height:64px!important}
-.offsetLine1{text-align:center;vertical-align:middle1;z-index:0!important}
-.offsetLine2{top:20px!important;z-index:0!important}
-.title-single{text-align:center;vertical-align:middle1;height:64px;z-index:0!important}
 /*!
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
