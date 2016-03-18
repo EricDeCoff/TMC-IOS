@@ -58,10 +58,6 @@
     <icon src="img/icons/winphone/icon.png" gap:platform="winphone" />
     <icon src="img/icons/winphone/tileicon.png" gap:platform="winphone" gap:role="background" />
         
-    <!-- SPLASH SCREENS -->
-        
-    <gap:splash src="splash.png" />
-    
     <!-- non retina -->
     <gap:splash src="Resources/iphone/Default.png" gap:platform="ios" width="320" height="480" />
     <!-- retina 4 -->
@@ -103,6 +99,9 @@
     <preference name="orientation" value="default" />
     <preference name="fullscreen" value="false" /> <!-- remove the upper bar on iOS and Android -->
     
+    
+    <!-- SPLASH SCREENS -->
+    <gap:splash src="splash.jpg" />
     
     <!-- SplashScreen -->
     <preference name="SplashScreen" value="splash.jpg" /> <!-- defaults to "img/logo.png" -->
