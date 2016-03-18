@@ -2125,6 +2125,6 @@ to{transform:scale(1);opacity:1}}
 .ion-3x{font-size:3em}
 .ion-4x{font-size:4em}
 .ion-5x{font-size:5em}
-.bar,.bar-header:not(.bar-subheader),.title{height:64px}
+.bar,.bar-header:not(.bar-subheader){height:64px}
 .button-sidemenu{max-height:64px}
 .has-header{padding-top:30px}
