@@ -16,6 +16,7 @@
     <!-- PLUGINS -->
     <gap:plugin name="cordova-plugin-console" source="npm"/>
     <gap:plugin name="cordova-plugin-device" source="npm"/>
+    <gap:plugin name="cordova-plugin-statusbar" source="npm">
     <gap:plugin name="ionic-plugin-keyboard" source="npm"/>
     
     <gap:plugin name="cordova-plugin-inappbrowser" source="npm"/>
