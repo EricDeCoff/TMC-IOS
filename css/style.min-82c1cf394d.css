@@ -18,9 +18,6 @@
 @media only screen and (orientation:landscape){.landscape{display:inline-block}
 .portrait{display:none}
 .contact-bgImage{background-position-x:50%;background-position-y:-50%}}
-.hours-view .scroll-content{display:table!important;width:100%!important;height:100%!important}
-.hours-view .scroll{display:table-cell;vertical-align:middle;text-align:center}
-.hours-view .has-header{padding-top:0;top:0}
 @media only screen and (min-width:320px){.hours-DOW,.hours-Hours{font-weight:700}}
 @media only screen and (min-width:480px){.hours-DOW,.hours-Hours{font-size:1em;line-height:1.5}}
 @media only screen and (min-width:768px){.hours-DOW,.hours-Hours{font-size:2em;line-height:1.5}}

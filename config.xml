@@ -77,7 +77,7 @@
     <gap:platform name="ios" />
     
     <!-- STATUSBAR -->    
-    <preference name="StatusBarOverlaysWebView" value="false" /> 
+    <preference name="StatusBarOverlaysWebView" value="true" /> 
     
     <!-- GENERAL PREFERENCES -->
     <preference name="phonegap-version" value="cli-5.2.0" />
