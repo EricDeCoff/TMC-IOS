@@ -66,7 +66,6 @@
 .box-date .month{text-align:right;font-size:12px;line-height:12px;display:inline-block;max-width:63px;text-transform:uppercase}
 .platform-android.platform-cordova:not(.fullscreen) .box-date{top:-5px}
 .platform-android.platform-cordova:not(.fullscreen) .box-date .day{top:10px}
-.platform-ios.platform-cordova:not(.fullscreen) .box-date{top:-30px}
 /*!
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
